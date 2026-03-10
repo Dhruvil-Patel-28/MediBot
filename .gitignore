@@ -1,0 +1,16 @@
+# environment
+.env
+
+# python
+__pycache__/
+*.pyc
+
+# vector database
+vectorstore/
+
+# virtual environment
+medi/
+venv/
+
+# OS files
+.DS_Store
