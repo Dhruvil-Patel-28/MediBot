@@ -15,7 +15,7 @@ def load_pdf_files(data):
     return documents
 
 documents = load_pdf_files(data = DATA_PATH)
-#print(f"Loaded {len(documents)} documents.")
+print(f"Loaded {len(documents)} documents.")
 
 def create_chunks(extracted_text):
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
@@ -23,7 +23,7 @@ def create_chunks(extracted_text):
     return chunks
 
 chunks = create_chunks(extracted_text = documents)
-#print(f"Created {len(chunks)} chunks.")
+print(f"Created {len(chunks)} chunks.")
 
 def get_embedding_model():
     embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
@@ -33,4 +33,7 @@ embedding_model = get_embedding_model()
 
 DB_FAISS_PATH = "vectorstore/db_faiss"
 db = FAISS.from_documents(chunks, embedding_model)
+print("Creating FAISS vector store....")
 db.save_local(DB_FAISS_PATH)
+print("FAISS vector store created!")
+      
