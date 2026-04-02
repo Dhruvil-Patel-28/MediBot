@@ -196,10 +196,6 @@ Medical_AI_Chatbot_RAG/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## ⚠️ Disclaimer
 
 This chatbot is for informational purposes only and should not replace professional medical advice. Always consult with qualified healthcare providers for medical concerns and treatment decisions.
@@ -207,4 +203,3 @@ This chatbot is for informational purposes only and should not replace professio
 ---
 
 **Built with ❤️ using Streamlit, LangChain, and Google Gemini**</content>
-<parameter name="filePath">c:\Users\HP\Desktop\Dhruvil\Medical_AI_Chatbot_RAG\README.md
