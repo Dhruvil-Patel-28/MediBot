@@ -202,4 +202,3 @@ This chatbot is for informational purposes only and should not replace professio
 
 ---
 
-**Built with ❤️ using Streamlit, LangChain, and Google Gemini**</content>
